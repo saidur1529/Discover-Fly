@@ -94,9 +94,10 @@ nav ul li a:hover, a.active{
     grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
-.booking-content{
+.booking-content input{
+    display: flex;
     color: #fff;
-    width: 80%;
+    width: 50%;
 }
 .booking-content h1{
     font-size: 70px;
