@@ -95,9 +95,8 @@ nav ul li a:hover, a.active{
     gap: 10px;
 }
 .booking-content input{
-    display: flex;
     color: #fff;
-    width: 50%;
+    width: 80%;
 }
 .booking-content h1{
     font-size: 70px;
