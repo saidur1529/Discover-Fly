@@ -119,6 +119,11 @@
                 <h1>Thanks for booking</h1>
                 <h2>Here is your booking details</h2>
                 <hr><br>
+                <!-- <ol>
+                    <li><h3>Number of First Class Tickets: <span id="fclass-msg"></span></h3><br></li>
+                    <li><h3>Number of Economy Class Tickets: <span id="eclass-msg"></span></h3><br></li>
+                    <li><h3>Your Total Fare is: <span id="total-msg"></span></h3></li>
+                </ol> -->
                 <h3>Number of First Class Tickets: <span id="fclass-msg"></span></h3><br>
                 <h3>Number of Economy Class Tickets: <span id="eclass-msg"></span></h3><br>
                 <h3>Your Total Fare is: <span id="total-msg"></span></h3>
@@ -144,7 +149,7 @@
             document.getElementById(ticket + '-count').value = ticketNewCount;
             calculation();
         }
-
+        // calculation for sub total, charge and total fare
         function calculation() {
             const fclassInput = getInputValue('fclass');
             const economyInput = getInputValue('economy');
@@ -163,7 +168,6 @@
             document.getElementById('fclass-msg').textContent = getInputValue('fclass');
             document.getElementById('eclass-msg').textContent = getInputValue('economy');
             document.getElementById('total-msg').textContent = document.getElementById('total').innerText + ' (Inc. 10% Charge)';
-
         }
 
     </script>
