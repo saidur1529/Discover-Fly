@@ -119,11 +119,6 @@
                 <h1>Thanks for booking</h1>
                 <h2>Here is your booking details</h2>
                 <hr><br>
-                <!-- <ol>
-                    <li><h3>Number of First Class Tickets: <span id="fclass-msg"></span></h3><br></li>
-                    <li><h3>Number of Economy Class Tickets: <span id="eclass-msg"></span></h3><br></li>
-                    <li><h3>Your Total Fare is: <span id="total-msg"></span></h3></li>
-                </ol> -->
                 <h3>Number of First Class Tickets: <span id="fclass-msg"></span></h3><br>
                 <h3>Number of Economy Class Tickets: <span id="eclass-msg"></span></h3><br>
                 <h3>Your Total Fare is: <span id="total-msg"></span></h3>
@@ -138,7 +133,6 @@
         }
         function handleTicketChange(ticket, isIncrease) {
             const ticketCount = getInputValue(ticket);
-            // const  ticketNewCount = ticketCount - 1;
             let ticketNewCount = ticketCount;
             if (isIncrease == true) {
                 ticketNewCount = ticketCount + 1;
@@ -161,8 +155,7 @@
             document.getElementById('total').innerText = '$' + grandTotal;
         }
         //   function to display confirmation message
-        function confirmationArea() {
-            // document.getElementById('form').style.display = "none";
+        function confirmationArea(){
             document.getElementById('content').style.display = "none";
             document.getElementById('booking-msg').style.display = "block";
             document.getElementById('fclass-msg').textContent = getInputValue('fclass');
